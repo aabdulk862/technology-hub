@@ -49,7 +49,7 @@ header img {
 
 .flex-container {
   height: 50%;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -57,9 +57,14 @@ header img {
   align-items: center;
   align-content: center;
 }
+
 .flex-container > div{
-  margin: 60px;
+  margin-top: 30px;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-bottom: 30px;
 }
+
 .flex-items:nth-child(1) {
   display: block;
   flex-basis: auto;
