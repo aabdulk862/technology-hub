@@ -39,12 +39,18 @@ header img {
 }
 
 .disclaimer{
+  padding-top: 10px;
   text-align: center;
 }
 
 .links a, .links a:hover{
   color: black;
   text-decoration: none; 
+}
+
+.homeImage{
+  width: 270px;
+  height: auto;
 }
 
 .flex-container {
@@ -59,10 +65,10 @@ header img {
 }
 
 .flex-container > div{
-  margin-top: 30px;
-  margin-right: 70px;
-  margin-left: 70px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 .flex-items:nth-child(1) {
@@ -80,19 +86,23 @@ header img {
   order: 0;
   cursor: pointer;
 }
+
 figure a, figure a:hover{
   color: black;
   text-decoration: none; 
 }
+
 figure h4{
   padding-top: 20px;
 }
+
 .hover01 figure img {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
+
 .hover01 figure:hover img {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
@@ -142,6 +152,7 @@ label{
   display: block;
   font-size: 16px;
 }
+
 input{
   width: 100%;
   height: 40px;
@@ -200,34 +211,42 @@ table{
     padding-right: 25px;
     padding-bottom: 0px;
   }
+
   .content h1{
     font-size: 20px;
   }
+
   .content p{
     font-size: 12px;
   }
+
   header img {
     margin-left: 50%;
     transform: translateX(-50%);
     object-fit: cover;
   }
+
   fieldset {
     background-color: #eeeeee;
     padding: 5px;
     border: 1px solid;
   }
+
   .form-container{
     padding: 0;
     font-size:15px;
     width: 100%;
   }
+  
   input {
     padding: 8px; 
   }
+
   label {
     font-size:12px;
     width: 100%;
   }
+
   .form-btn{
     width: 100px;
     height: 50px;
@@ -240,6 +259,7 @@ table{
     padding: 10px;
     border: none;
   }
+
   .benefits{
     font-size: 12px;
     padding-left: 25px;
@@ -250,4 +270,5 @@ table{
     border-collapse: collapse;
     width: 100%;
   }
+
 }
