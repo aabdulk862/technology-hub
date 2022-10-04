@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
 html {
   box-sizing: border-box;
 }
@@ -8,6 +9,35 @@ body {
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
+
+/* Messages Stylings */
+.info-msg,
+.success-msg,
+.warning-msg,
+.error-msg {
+  margin: 5px 90px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+
+}
+.info-msg {
+  color: rgb(2, 47, 82);
+  background-color: rgb(206, 233, 241);
+}
+.success-msg {
+  color: #270;
+  background-color: #DFF2BF;
+}
+.warning-msg {
+  color: #9F6000;
+  background-color: #FEEFB3;
+}
+.error-msg {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+/* Messages Stylings */
 
 .navbar-collapse{
   padding-left: 10px;
@@ -34,13 +64,13 @@ header img {
 }
 
 .content h1{
-  font-size: 32px;
+  font-size: 35px;
   text-align: center;
 }
 
-.disclaimer{
-  padding-top: 10px;
+.citations{
   text-align: center;
+  font-size: 16px;
 }
 
 .links a, .links a:hover{
@@ -49,8 +79,9 @@ header img {
 }
 
 .homeImage{
-  width: 270px;
+  width: 300px;
   height: auto;
+  
 }
 
 .flex-container {
@@ -213,11 +244,7 @@ table{
   }
 
   .content h1{
-    font-size: 20px;
-  }
-
-  .content p{
-    font-size: 12px;
+    font-size: 21px;
   }
 
   header img {
@@ -225,6 +252,18 @@ table{
     transform: translateX(-50%);
     object-fit: cover;
   }
+
+.info-msg,
+.success-msg,
+.warning-msg,
+.error-msg {
+  font-size: 11px;
+  margin: 5px 25px;
+}
+
+.citations{
+  font-size: 13px;
+}
 
   fieldset {
     background-color: #eeeeee;
