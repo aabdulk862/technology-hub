@@ -1,5 +1,5 @@
 // Array of product image names found on the webstie
-const productImages = ["tv1.png", "tv2.png", "tv3.png", "tv4.png", "computer1.png", "computer2.png", "computer3.png", "computer4.png"];
+const productImages = ["tv1.png", "tv2.png", "tv3.png", "tv4.png", "computer1.png", "computer2.png", "computer3.png", "computer4.png", "phone1.png", "phone2.png", "phone3.png", "phone4.png"];
 
 // Returns Random Integer
 function getRandomInt(min, max) {
@@ -13,9 +13,7 @@ function getRandomInt(min, max) {
 // The function also creates a link that takes the user to the page where the product is located
 function randomGift(){
     numImages = productImages.length;
-    var randomInt = getRandomInt(0,numImages-1);
-    console.log(randomInt);
-    randomProduct = productImages[randomInt]
+    randomProduct = productImages[getRandomInt(0,numImages-1)]
     document.getElementById("randomImg").src = "./img/" + randomProduct;
 
     if(randomProduct.includes("tv")){
@@ -23,5 +21,8 @@ function randomGift(){
     }
     if(randomProduct.includes("computer")){
         document.getElementById("randomLink").href = "./computers.html";
+    }
+    if(randomProduct.includes("phone")){
+        document.getElementById("randomLink").href = "./phones.html";
     }
 }
