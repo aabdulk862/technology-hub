@@ -38,7 +38,11 @@ body {
   background-color: #FFBABA;
 }
 /* Messages Stylings */
+  
 
+nav{
+  font-size: 22px;
+}
 .navbar-collapse{
   padding-left: 10px;
 }
@@ -63,19 +67,54 @@ header img {
   padding-bottom: 20px;
 }
 
-.content h1{
-  font-size: 35px;
+.content h1, h2{
+  font-size: 30px;
   text-align: center;
 }
 
+.gift-btn{
+  width: 120.93px;
+  height: 50px;
+  cursor: pointer;
+  color: white;
+  background: #5C848E;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+}
+
 .citations{
+  padding-top: 30px;
   text-align: center;
-  font-size: 16px;
+  font-size: 25px;
+  list-style: none;
+}
+.citations li {
+  display: inline;
+  text-decoration: none;
+  margin: 15px;
+}
+
+.citations a{
+  background-color: #5C848E;
+  color: white;
+  border: 2px solid #5C848E;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.citations a:hover{
+  background-color: white;
+  color: black;
+  
 }
 
 .links a, .links a:hover{
   color: black;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .homeImage{
@@ -139,6 +178,51 @@ figure h4{
 	transform: scale(1.1);
 }
 
+.generator{
+  text-align:center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.generator h1{
+  font-size: 30px;
+}
+
+#randomImg{
+ width: 30%;
+ margin: auto;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+ -webkit-transition: .3s ease-in-out;
+ transition: .3s ease-in-out;
+ padding-top: 20px;
+}
+
+#random{
+  width: 30%;
+  margin: auto;
+  height: 45px;
+  cursor: pointer;
+  color: white;
+  background: #5C848E;
+  
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  font-size: 25px;
+}
+
+#random:hover{
+  border: 2px solid #5C848E;
+  background-color: white;
+  color: black;
+}
+
+#randomImg:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+ }
+
 fieldset {
   background-color: #eeeeee;
   padding: 5px;
@@ -177,14 +261,14 @@ legend {
   height: 70px;
 }
 
-label{
+.form-group label{
   position: relative;
   bottom: 3px;
   display: block;
   font-size: 16px;
 }
 
-input{
+.form-group input{
   width: 100%;
   height: 40px;
   border: 1px solid black;
@@ -229,7 +313,7 @@ input{
   color: black;
 }
 
-table{
+.benefits table{
   width: 100%;
 }
 
@@ -265,6 +349,16 @@ table{
   font-size: 13px;
 }
 
+.citations a{
+  padding: 15px 25px;
+}
+
+#randomImg{
+  width: 60%;
+  margin: auto;
+
+ }
+
   fieldset {
     background-color: #eeeeee;
     padding: 5px;
@@ -277,11 +371,11 @@ table{
     width: 100%;
   }
   
-  input {
+  .form-group input {
     padding: 8px; 
   }
 
-  label {
+  .form-group label {
     font-size:12px;
     width: 100%;
   }
@@ -298,7 +392,10 @@ table{
     padding: 10px;
     border: none;
   }
-
+  #random{
+    width: 50%;
+    font-size: 18px;
+  }
   .benefits{
     font-size: 12px;
     padding-left: 25px;

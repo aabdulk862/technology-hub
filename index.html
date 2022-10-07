@@ -23,7 +23,7 @@
     />
     <link rel="stylesheet" href="stlye.css" />
   </head>
-  <body>
+  <body onload="randomGift()">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <button
         class="navbar-toggler"
@@ -86,19 +86,22 @@
       Law and have been prepared according to the multimedia fair use guidelines
       and are restricted from further use.
     </div>
-    <p class="citations links">
-      <br /><a
-        href="./citations.html"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <b>Click here for citations</b></a
-      ><br />
-      <a href="./stlye.css" target="_blank" rel="noopener noreferrer"
-        ><b>Click here for styling</b>
-      </a>
-    </p>
-
+    <ul class="citations">
+      <li>
+        <a href="#gift"> Random Gift</a>
+      </li>
+      <li>
+        <a href="./stlye.css" target="_blank" rel="noopener noreferrer"
+          >Styling
+        </a>
+      </li>
+      <li>
+        <a href="./citations.html" target="_blank" rel="noopener noreferrer">
+          Citations</a
+        >
+      </li>
+      
+    </ul>
     <div class="flex-container hover01 column" id="card">
       <div class="flex-items">
         <figure>
@@ -163,6 +166,23 @@
         </figure>
       </div>
     </div>
+    <div class="generator" id="gift">
+      <h1>Need help picking a gift? We got you covered!</h1>
+      <h1>Just use our random gift generator ¯\_(ツ)_/¯</h1>
+      <a href="" id="randomLink"
+        ><img id="randomImg" src="" alt="Random Gift" title="Random Gift"
+      /></a>
+      <br />
+      <br />
+      <input
+        type="button"
+        name="random"
+        id="random"
+        value="Pick a random gift"
+        onclick="randomGift()"
+      />
+    </div>
+
     <!-- Script -->
     <script src="script.js"></script>
     <script
