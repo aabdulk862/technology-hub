@@ -16,11 +16,10 @@ body {
 .success-msg,
 .warning-msg,
 .error-msg {
-  margin: 5px 90px;
+  margin: 5px 60px;
   padding: 10px 10px;
   border-radius: 5px;
-  font-size: 16px;
-
+  font-size: 18px;
 }
 
 .info-msg {
@@ -34,8 +33,8 @@ body {
 }
 
 .warning-msg {
-  color: #9F6000;
-  background-color: #FEEFB3;
+  color: #311e01;
+  background-color: #fff3c6;
 }
 
 .error-msg {

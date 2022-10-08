@@ -1,3 +1,15 @@
+// The document's last modification date and time are displayed
+var myDate = new Date(document.lastModified);
+theMonth = myDate.getMonth() + 1;
+theDate = myDate.getDate();
+theYear = myDate.getFullYear();
+theTime = myDate.toLocaleTimeString();
+document.getElementById("modify").innerHTML =
+  "<I>" + theMonth + "/" + theDate + "/" + theYear + "  at  " + theTime + "</I>";
+
+// Displays Date for Copyright Message
+document.getElementById("year").innerHTML = myDate.getFullYear();
+
 // Array of product image names found on the webstie
 const arr = [
   "tv1.png",
