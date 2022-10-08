@@ -340,6 +340,14 @@ legend {
   width: 100%;
 }
 
+.topScroll{
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 1000px){
   .content{
     width: 100%;
@@ -454,5 +462,12 @@ fieldset {
   transform: translateX(-50%);
   border-collapse: collapse;
   width: 100%;
+}
+.topScroll{
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
 }
 }
