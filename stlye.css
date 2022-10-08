@@ -350,7 +350,7 @@ legend {
 .success-msg,
 .warning-msg,
 .error-msg {
-  font-size: 11px;
+  font-size: 14px;
   margin: 5px 25px;
 }
 
@@ -398,6 +398,10 @@ fieldset {
   letter-spacing: 2px;
   padding: 10px;
   border: none;
+}
+
+.generator h1{
+  font-size: 22px;
 }
 
 #random{
