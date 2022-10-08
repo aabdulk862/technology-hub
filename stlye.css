@@ -190,27 +190,35 @@ figure h4{
 }
 
 .generator{
-  text-align:center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  text-align: center;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 95px;
+  padding-right: 95px;
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 .generator h1{
   font-size: 30px;
+  padding: 10px;
 }
 
 #randomImg{
- width: 30%;
+ width: 25vw;
  margin: auto;
  -webkit-transform: scale(1);
  transform: scale(1);
  -webkit-transition: .3s ease-in-out;
  transition: .3s ease-in-out;
- padding-top: 20px;
 }
 
 #random{
-  width: 30%;
+  width: 50%;
   margin: auto;
   height: 45px;
   cursor: pointer;
@@ -362,17 +370,12 @@ legend {
 }
 
 .citations a{
-  padding: 10px;
+  padding: 7px;
 }
 
 .homeImage{
   width: 250px;
   height: auto;
-}
-
-#randomImg{
-  width: 60%;
-  margin: auto;
 }
 
 fieldset {
@@ -408,14 +411,28 @@ fieldset {
   padding: 10px;
   border: none;
 }
+.generator{
+  padding-left: 25px;
+  padding-right: 25px;
+  align-items: center;
+  text-align: unset;
+}
 
+#randomImg{
+  width: 45vw;
+  height: auto;
+  padding-left: 10px;
+  margin: auto;
+}
 .generator h1{
-  font-size: 22px;
+  font-size: 20px;
+  
 }
 
 #random{
-  width: 50%;
-  font-size: 18px;
+  width: 70%;
+  font-size: 16px;
+  letter-spacing: unset;
 }
 
 .benefits{
