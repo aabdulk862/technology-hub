@@ -358,9 +358,16 @@ legend {
 
 .citations{
   font-size: 18px;  
+  justify-content: unset;
 }
+
 .citations a{
   padding: 10px;
+}
+
+.homeImage{
+  width: 250px;
+  height: auto;
 }
 
 #randomImg{
