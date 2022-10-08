@@ -111,9 +111,10 @@ header img {
   color: white;
   border: 2px solid #5C848E;
   border-radius: 5px;
-  padding: 15px 20px;
+  padding: 10px 15px;
   text-align: center;
   text-decoration: none;
+  letter-spacing: 1.5px;
 
 }
 
@@ -219,6 +220,7 @@ figure h4{
   font-family: 'Roboto', sans-serif;
   border: none;
   font-size: 25px;
+  letter-spacing: 1.5px;
 }
 
 #random:hover{

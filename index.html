@@ -19,7 +19,7 @@
     <link rel="icon" type="img/png" href="img/favicon.png" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
     <link rel="stylesheet" href="stlye.css" />
   </head>
@@ -87,20 +87,22 @@
     </div>
     <ul class="citations">
       <li>
-        <a href="#gift"> Random Gift</a>
-      </li>
-      <li onclick="toggleConfetti()">
-        <a href="javascript:;"> Party Time!</a>
-      </li>
-      <li>
-        <a href="./citations.html" target="_blank" rel="noopener noreferrer">
-          Citations</a
-        >
+        <a href="#gift"> Random Gift <i class="fa-solid fa-gift"></i></a>
       </li>
       <li>
         <a href="./stlye.css" target="_blank" rel="noopener noreferrer"
-          >Styling
+          >Styling <i class="fa-solid fa-file-code"></i>
         </a>
+      </li>
+      <li>
+        <a href="./citations.html" target="_blank" rel="noopener noreferrer">
+          Citations <i class="fa-solid fa-link"></i
+        ></a>
+      </li>
+      <li onclick="toggleConfetti()">
+        <a href="javascript:;"
+          >Party Mode <i class="fas fa-glass-cheers"></i
+        ></a>
       </li>
     </ul>
     <div class="flex-container hover01 column" id="card">
@@ -179,7 +181,7 @@
         type="button"
         name="random"
         id="random"
-        value="Pick a random gift"
+        value="Random Gift"
         onclick="randomGift()"
       />
     </div>
