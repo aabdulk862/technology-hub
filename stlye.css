@@ -94,10 +94,15 @@ header img {
   text-align: center;
   font-size: 25px;
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .citations li {
-  display: inline;
   text-decoration: none;
   margin: 15px;
 }
@@ -110,7 +115,7 @@ header img {
   padding: 15px 20px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+
 }
 
 .citations a:hover{
@@ -350,68 +355,65 @@ legend {
   margin: 5px 25px;
 }
 
-  .citations{
-    font-size: 15px;
-  }
+.citations{
+  font-size: 18px;  
+}
+.citations a{
+  padding: 10px;
+}
 
-  .citations a{
-    margin: 2px;
-    padding: 10px;
-  }
+#randomImg{
+  width: 60%;
+  margin: auto;
+}
 
-  #randomImg{
-    width: 60%;
-    margin: auto;
+fieldset {
+  background-color: #eeeeee;
+  padding: 5px;
+  border: 1px solid;
+}
 
-  }
+.form-container{
+  padding: 0;
+  font-size:15px;
+  width: 100%;
+}
 
-  fieldset {
-    background-color: #eeeeee;
-    padding: 5px;
-    border: 1px solid;
-  }
+.form-group input {
+  padding: 8px; 
+}
 
-  .form-container{
-    padding: 0;
-    font-size:15px;
-    width: 100%;
-  }
-  
-  .form-group input {
-    padding: 8px; 
-  }
+.form-group label {
+  font-size:12px;
+  width: 100%;
+}
 
-  .form-group label {
-    font-size:12px;
-    width: 100%;
-  }
+.form-btn{
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  color: white;
+  background: #5C848E;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 2px;
+  padding: 10px;
+  border: none;
+}
 
-  .form-btn{
-    width: 100px;
-    height: 50px;
-    cursor: pointer;
-    color: white;
-    background: #5C848E;
-    border-radius: 20px;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 2px;
-    padding: 10px;
-    border: none;
-  }
+#random{
+  width: 50%;
+  font-size: 18px;
+}
 
-  #random{
-    width: 50%;
-    font-size: 18px;
-  }
-
-  .benefits{
-    font-size: 12px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 90px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    border-collapse: collapse;
-    width: 100%;
-  }
+.benefits{
+  font-size: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 90px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-collapse: collapse;
+  width: 100%;
+}
 }

@@ -71,7 +71,6 @@
     <header>
       <img src="./img/banner.png" alt="Banner" />
     </header>
-
     <div class="content">
       <h1>Technology Hub is your one-stop-shop for your electronic devices!</h1>
       <h1>
@@ -90,17 +89,19 @@
       <li>
         <a href="#gift"> Random Gift</a>
       </li>
-      <li>
-        <a href="./stlye.css" target="_blank" rel="noopener noreferrer"
-          >Styling
-        </a>
+      <li onclick="toggleConfetti()">
+        <a href="javascript:;" > Party Time!</a>
       </li>
       <li>
         <a href="./citations.html" target="_blank" rel="noopener noreferrer">
           Citations</a
         >
       </li>
-      
+      <li>
+        <a href="./stlye.css" target="_blank" rel="noopener noreferrer"
+          >Styling
+        </a>
+      </li>
     </ul>
     <div class="flex-container hover01 column" id="card">
       <div class="flex-items">
@@ -182,8 +183,8 @@
         onclick="randomGift()"
       />
     </div>
-
     <!-- Script -->
+    <script src="confetti.js"></script>
     <script src="script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
