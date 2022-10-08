@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
 html {
   box-sizing: border-box;
 }
@@ -21,18 +22,22 @@ body {
   font-size: 16px;
 
 }
+
 .info-msg {
   color: rgb(2, 47, 82);
   background-color: rgb(206, 233, 241);
-}
+} 
+
 .success-msg {
   color: #270;
   background-color: #DFF2BF;
 }
+
 .warning-msg {
   color: #9F6000;
   background-color: #FEEFB3;
 }
+
 .error-msg {
   color: #D8000C;
   background-color: #FFBABA;
@@ -43,6 +48,7 @@ body {
 nav{
   font-size: 22px;
 }
+
 .navbar-collapse{
   padding-left: 10px;
 }
@@ -89,6 +95,7 @@ header img {
   font-size: 25px;
   list-style: none;
 }
+
 .citations li {
   display: inline;
   text-decoration: none;
@@ -100,7 +107,7 @@ header img {
   color: white;
   border: 2px solid #5C848E;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -120,7 +127,6 @@ header img {
 .homeImage{
   width: 300px;
   height: auto;
-  
 }
 
 .flex-container {
@@ -205,7 +211,6 @@ figure h4{
   cursor: pointer;
   color: white;
   background: #5C848E;
-  
   border-radius: 20px;
   font-family: 'Roboto', sans-serif;
   border: none;
@@ -345,19 +350,20 @@ legend {
   margin: 5px 25px;
 }
 
-.citations{
-  font-size: 13px;
-}
+  .citations{
+    font-size: 15px;
+  }
 
-.citations a{
-  padding: 15px 25px;
-}
+  .citations a{
+    margin: 2px;
+    padding: 10px;
+  }
 
-#randomImg{
-  width: 60%;
-  margin: auto;
+  #randomImg{
+    width: 60%;
+    margin: auto;
 
- }
+  }
 
   fieldset {
     background-color: #eeeeee;
@@ -392,10 +398,12 @@ legend {
     padding: 10px;
     border: none;
   }
+
   #random{
     width: 50%;
     font-size: 18px;
   }
+
   .benefits{
     font-size: 12px;
     padding-left: 25px;
@@ -406,5 +414,4 @@ legend {
     border-collapse: collapse;
     width: 100%;
   }
-
 }
