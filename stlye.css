@@ -181,11 +181,7 @@ figure h4{
   padding-bottom: 60px;
   padding-left: 95px;
   padding-right: 95px;
-  display: inline-grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+
 }
 
 .generator h1{
@@ -200,6 +196,7 @@ figure h4{
  transform: scale(1);
  -webkit-transition: .3s ease-in-out;
  transition: .3s ease-in-out;
+ padding-bottom: 25px;
 }
 
 #random{
@@ -418,11 +415,10 @@ fieldset {
   padding-left: 25px;
   padding-right: 25px;
   align-items: center;
-  text-align: unset;
 }
 
 #randomImg{
-  width: 41vw;
+  width: 70vw;
   height: auto;
   padding-left: 10px;
   margin: auto;
