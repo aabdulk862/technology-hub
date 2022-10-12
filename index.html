@@ -72,12 +72,24 @@
       <img src="./img/banner.png" alt="Banner" />
     </header>
     <div class="content">
-      <h1>Technology Hub is your one-stop-shop for your electronic devices!</h1>
-      <h1>
-        We are constantly adding new products and offer competitive prices.
-      </h1>
+      <h1>Welcome to Technology Hub <span id="userName"></span>!</h1>
+      <h1>Your one-stop-shop for your electronic devices!</h1>
       <h1>Check out our online catalog and start saving money today!</h1>
     </div>
+    <div class="greeting">
+      <label for="name">What should we call you?</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Name"
+        required
+        minlength="3"
+        maxlength="100"
+      />
+      <button class="greetings-btn" onclick="setName()">Submit</button>
+    </div>
+
     <div class="info-msg">
       <i class="fa fa-info-circle"></i>
       Discliamer: This website is developed as an educational project. Certain
@@ -115,6 +127,7 @@
     </div>
 
     <br />
+    
     <div class="flex-container hover01 column home" id="card">
       <div class="flex-items">
         <figure>
@@ -195,7 +208,7 @@
         <input
           type="button"
           name="random"
-          id="random"
+          id="randomBtn"
           value="Random Gift"
           onclick="randomGift()"
         />

@@ -5,9 +5,17 @@ theDate = myDate.getDate();
 theYear = myDate.getFullYear();
 theTime = myDate.toLocaleTimeString();
 document.getElementById("modify").innerHTML =
-  "<I>" + theMonth + "/" + theDate + "/" + theYear + "  at  " + theTime + "</I>";
+  "<I>" +
+  theMonth +
+  "/" +
+  theDate +
+  "/" +
+  theYear +
+  "  at  " +
+  theTime +
+  "</I>";
 
-// Displays Date for Copyright Message
+// Displays the Year for Copyright Message
 document.getElementById("year").innerHTML = myDate.getFullYear();
 
 // Array of product image names found on the webstie
@@ -26,8 +34,7 @@ const arr = [
   "phone4.png",
 ];
 
-const productImages = shuffleArray(arr); // Shuffles product images
-
+// Shuffle Function
 function shuffleArray(array) {
   for (var i = array.length - 1; i > 0; i--) {
     // Generate random number
@@ -39,7 +46,9 @@ function shuffleArray(array) {
   return array;
 }
 
-// Returns Random Integer
+const productImages = shuffleArray(arr); // Shuffles product images to produce a more random reslut
+
+// Function Returns Random Integer
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -65,3 +74,19 @@ function randomGift() {
     document.getElementById("randomLink").href = "./phones.html";
   }
 }
+
+
+function setName() {
+  userName = document.getElementById("name").value;
+  localStorage.setItem("name", userName);
+  document.getElementById("userName").textContent = userName;
+}
+
+window.addEventListener("load", (event) => {
+  if (localStorage.getItem("name") === null) {
+    setName()
+  }else{
+    document.getElementById("userName").textContent =
+    localStorage.getItem("name");
+  }
+});

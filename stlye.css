@@ -45,7 +45,7 @@ body {
   
 
 nav{
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .navbar-collapse{
@@ -73,8 +73,46 @@ header img {
 }
 
 .content h1, h2{
-  font-size: 30px;
+  font-size: 32px;
   text-align: center;
+}
+
+#userName{
+  color: #477983;
+  font-weight: 950;
+}
+
+.greeting{
+  text-align: center;
+  margin: 20px;
+}
+
+.greeting  > label{
+  font-size: 22px;
+
+}
+
+.greeting  > input{
+  width: 20%;
+  height: 35px;
+  border: 1px solid black;
+  background: #E7E6E1;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.greetings-btn{
+  background-color: #797f81;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  width: 90px;
+  font-size: 20px;
 }
 
 .gift-btn{
@@ -111,7 +149,7 @@ header img {
 }
 
 .homeImage{
-  width: 300px;
+  width: 19vw;
   height: auto;
 }
 
@@ -121,7 +159,7 @@ header img {
 }
 
 .flex-container {
-  height: 50%;
+  height: 55%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -132,8 +170,8 @@ header img {
 
 .flex-container > div{
   margin-top: 20px;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 65px;
+  margin-left: 65px;
   margin-bottom: 20px;
 }
 
@@ -199,8 +237,8 @@ figure h4{
  padding-bottom: 25px;
 }
 
-#random{
-  width: 50%;
+#randomBtn{
+  width: 30%;
   margin: auto;
   height: 45px;
   cursor: pointer;
@@ -213,7 +251,7 @@ figure h4{
   letter-spacing: 1.5px;
 }
 
-#random:hover{
+#randomBtn:hover{
   border: 2px solid #5C848E;
   background-color: white;
   color: black;
@@ -337,7 +375,7 @@ legend {
   }
 
   .content h1{
-    font-size: 21px;
+    font-size: 22px;
   }
 
   header img {
@@ -352,6 +390,37 @@ legend {
 .error-msg {
   font-size: 14px;
   margin: 5px 25px;
+}
+
+.greeting{
+  text-align: center;
+  margin: 20px;
+}
+
+.greeting  > label{
+  font-size: 15px;
+}
+
+.greeting  > input{
+  width: 25%;
+  height: 30px;
+  border: 1px solid black;
+  background: #E7E6E1;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.greetings-btn{
+  background-color: #797f81;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+  font-size: 16px;
 }
 
 .flex-container > div{
@@ -428,7 +497,7 @@ fieldset {
   text-align: center;
 }
 
-#random{
+#randomBtn{
   width: 70%;
   font-size: 16px;
   letter-spacing: unset;
