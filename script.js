@@ -83,6 +83,7 @@ function setName() {
 }
 
 window.addEventListener("load", (event) => {
+  randomGift()
   if (localStorage.getItem("name") === null) {
     setName()
   }else{
