@@ -84,7 +84,7 @@ header img {
 
 .greeting{
   text-align: center;
-  margin: 20px;
+  padding-bottom: 20px;
 }
 
 .greeting  > label{
@@ -124,6 +124,10 @@ header img {
   border-radius: 20px;
   font-family: 'Roboto', sans-serif;
   border: none;
+}
+
+#homelinksnav{
+  padding-top: 20px;
 }
 
 .homeLinks{
@@ -392,24 +396,20 @@ legend {
   margin: 5px 25px;
 }
 
-.greeting{
-  text-align: center;
-  margin: 20px;
-}
-
 .greeting  > label{
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .greeting  > input{
-  width: 25%;
-  height: 30px;
+  width: 30%;
+  height: 20px;
   border: 1px solid black;
   background: #E7E6E1;
   border-radius: 5px;
   outline: none;
   box-sizing: border-box;
   overflow: hidden;
+  font-size: 13px;
 }
 
 .greetings-btn{
@@ -419,8 +419,8 @@ legend {
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
-  width: 70px;
-  font-size: 16px;
+  width: 50px;
+  font-size: 13px;
 }
 
 .flex-container > div{
@@ -512,6 +512,9 @@ fieldset {
   transform: translateX(-50%);
   border-collapse: collapse;
   width: 100%;
+}
+.benefits >h1{
+  font-size: 22px;
 }
 .topScroll{
   padding-left: 25px;
