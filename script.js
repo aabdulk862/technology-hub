@@ -1,4 +1,4 @@
-// The Document's last modification Date and Time are displayed
+// The Document's last modification Date and Time are displayed (home page)
 var myDate = new Date(document.lastModified);
 var theMonth = myDate.getMonth() + 1;
 var theDate = myDate.getDate();
