@@ -89,7 +89,6 @@ header img {
 
 .greeting  > label{
   font-size: 22px;
-
 }
 
 .greeting  > input{
@@ -411,7 +410,7 @@ legend {
 
 .greetings-btn{
   width: 50px;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .flex-container > div{
