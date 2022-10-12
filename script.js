@@ -6,7 +6,7 @@ var theYear = myDate.getFullYear();
 var theTime = myDate.toLocaleTimeString();
 
 // Validating that the element exists to avoid errors on the other pages.
-if (document.getElementById("modify") != null) {  
+if (document.getElementById("modify") != null) {
   // Formatting Date and Time
   document.getElementById("modify").innerHTML =
     "<I>" +
@@ -20,8 +20,8 @@ if (document.getElementById("modify") != null) {
     "</I>";
 }
 
-// Validating that the element exists
-if (document.getElementById("modify") != null) {  
+// Validating that the modify element exists
+if (document.getElementById("year") != null) {
   // Displays the Year for Copyright Message
   document.getElementById("year").innerHTML = myDate.getFullYear();
 }
@@ -55,7 +55,7 @@ function shuffleArray(array) {
 }
 
 // Shuffles product images to produce a more random reslut
-const productImages = shuffleArray(arr); 
+const productImages = shuffleArray(arr);
 
 // Function Returns Random Integer
 function getRandomInt(min, max) {
@@ -71,8 +71,8 @@ function getRandomInt(min, max) {
 function randomGift() {
   numImages = productImages.length;
   randomProduct = productImages[getRandomInt(0, numImages - 1)];
-  // Validating that the element exists
-  if (document.getElementById("randomImg") != null) {  
+  // Validating that the random image element exists
+  if (document.getElementById("randomImg") != null) {
     document.getElementById("randomImg").src = "./img/" + randomProduct;
     // Checks to see what type of image it is
     if (randomProduct.includes("tv")) {
@@ -103,7 +103,8 @@ function setName() {
 // The function is called every time the window is loaded
 window.addEventListener("load", (event) => {
   randomGift();
-  if (document.getElementById("username") != null) {  // Validating that the element exists
+   // Validating that the input element exists
+  if (document.getElementById("name") != null) {
     if (localStorage.getItem("name") === null) {
       setName();
     } else {
