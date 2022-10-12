@@ -80,6 +80,7 @@ function setName() {
   userName = document.getElementById("name").value;
   localStorage.setItem("name", userName);
   document.getElementById("userName").textContent = userName;
+  document.getElementById("name").value = "";
 }
 
 window.addEventListener("load", (event) => {

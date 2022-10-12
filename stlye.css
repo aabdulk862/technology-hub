@@ -395,6 +395,9 @@ legend {
   font-size: 14px;
   margin: 5px 25px;
 }
+.greeting{
+  padding-top: 20px;
+}
 
 .greeting  > label{
   font-size: 13px;
@@ -403,22 +406,10 @@ legend {
 .greeting  > input{
   width: 30%;
   height: 20px;
-  border: 1px solid black;
-  background: #E7E6E1;
-  border-radius: 5px;
-  outline: none;
-  box-sizing: border-box;
-  overflow: hidden;
   font-size: 13px;
 }
 
 .greetings-btn{
-  background-color: #797f81;
-  color: rgb(255, 255, 255);
-  border: none;
-  border-radius: 5px;
-  text-align: center;
-  text-decoration: none;
   width: 50px;
   font-size: 13px;
 }
