@@ -1,9 +1,9 @@
 // The Document's last modification Date and Time are displayed (home page)
-var myDate = new Date(document.lastModified);
-var theMonth = myDate.getMonth() + 1;
-var theDate = myDate.getDate();
-var theYear = myDate.getFullYear();
-var theTime = myDate.toLocaleTimeString();
+const myDate = new Date(document.lastModified);
+const theMonth = myDate.getMonth() + 1;
+const theDate = myDate.getDate();
+const theYear = myDate.getFullYear();
+const theTime = myDate.toLocaleTimeString();
 
 // Validating that the element exists to avoid errors on the other pages.
 if (document.getElementById("modify") != null) {
@@ -69,7 +69,7 @@ function getRandomInt(min, max) {
 // The function is called when the user clicks the "Pick a random gift" button
 // The function is also called by the window on load
 function randomGift() {
-  numImages = productImages.length;
+  const numImages = productImages.length;
   randomProduct = productImages[getRandomInt(0, numImages - 1)];
   // Validating that the random image element exists
   if (document.getElementById("randomImg") != null) {
@@ -91,7 +91,7 @@ function randomGift() {
 // The fuction is called when the user presses the enter button
 // The name is saved to local storage
 function setName() {
-  userName = document.getElementById("name").value;
+  const userName = document.getElementById("name").value;
   localStorage.setItem("name", userName);
   document.getElementById("userName").textContent = userName;
   document.getElementById("name").value = "";
@@ -103,7 +103,7 @@ function setName() {
 // The function is called every time the window is loaded
 window.addEventListener("load", (event) => {
   randomGift();
-   // Validating that the input element exists
+  // Validating that the input element exists
   if (document.getElementById("name") != null) {
     if (localStorage.getItem("name") === null) {
       setName();
