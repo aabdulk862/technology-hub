@@ -9,6 +9,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
+  background-color: whitesmoke;
 }
 
 /* Messages Stylings */
@@ -23,8 +24,8 @@ body {
 }
 
 .info-msg {
-  color: rgb(2, 47, 82);
-  background-color: rgb(206, 233, 241);
+  color: rgb(0, 0, 0);
+  background-color: #bde0ff;
 } 
 
 .success-msg {
@@ -78,7 +79,7 @@ header img {
 }
 
 #userName{
-  color: #477983;
+  color: #000000;
   font-weight: 950;
 }
 
@@ -104,8 +105,8 @@ header img {
 }
 
 .greetings-btn{
-  background-color: #797f81;
-  color: rgb(255, 255, 255);
+  background-color: #5a5a5a;
+  color: whitesmoke;
   border: none;
   border-radius: 5px;
   text-align: center;
@@ -118,7 +119,7 @@ header img {
   width: 120.93px;
   height: 50px;
   cursor: pointer;
-  color: white;
+  color: whitesmoke;
   background: #5C848E;
   border-radius: 20px;
   font-family: 'Roboto', sans-serif;
@@ -130,9 +131,9 @@ header img {
 }
 
 .homeLinks{
-  background-color: #5C848E;
-  color: white;
-  border: 2px solid #5C848E;
+  background-color: #587b7f;
+  color: whitesmoke;
+  border: 2px solid #587b7f;
   border-radius: 5px;
   padding: 10px 15px;
   text-align: center;
@@ -142,7 +143,7 @@ header img {
 }
 
 .homeLinks:hover{
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
 }
 
@@ -152,13 +153,9 @@ header img {
 }
 
 .homeImage{
-  width: 19vw;
+  width: 18vw;
   height: auto;
-}
-
-.home{
-  padding-top: 50px;
-  padding-bottom: 50px;
+  filter: brightness(.98);
 }
 
 .flex-container {
@@ -172,10 +169,7 @@ header img {
 }
 
 .flex-container > div{
-  margin-top: 20px;
-  margin-right: 65px;
-  margin-left: 65px;
-  margin-bottom: 20px;
+  margin: 50px 70px;
 }
 
 .flex-items:nth-child(1) {
@@ -217,21 +211,16 @@ figure h4{
 
 .generator{
   text-align: center;
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 95px;
-  padding-right: 95px;
-
+  padding: 20px;
 }
 
 .generator h1{
-  font-size: 30px;
-  padding: 10px;
+  font-size: 28px;
+  padding: 15px;
 }
 
 #randomImg{
- width: 25vw;
+ width: 27vw;
  margin: auto;
  -webkit-transform: scale(1);
  transform: scale(1);
@@ -246,17 +235,16 @@ figure h4{
   height: 45px;
   cursor: pointer;
   color: white;
-  background: #5C848E;
+  background: #587b7f;
   border-radius: 20px;
   font-family: 'Roboto', sans-serif;
   border: none;
   font-size: 25px;
-  letter-spacing: 1.5px;
 }
 
 #randomBtn:hover{
-  border: 2px solid #5C848E;
-  background-color: white;
+  border: 2px solid #587b7f;
+  background-color: whitesmoke;
   color: black;
 }
 
@@ -336,6 +324,9 @@ legend {
   transform: translateX(-50%);
   border-collapse: collapse;
   width: 75%;
+}
+.benefits > h1{
+  font-size: 20px;
 }
 
 .benefits td, .benefits th {
@@ -494,7 +485,7 @@ fieldset {
 }
 
 .benefits{
-  font-size: 12px;
+  font-size: 20px;
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 90px;
@@ -503,9 +494,7 @@ fieldset {
   border-collapse: collapse;
   width: 100%;
 }
-.benefits >h1{
-  font-size: 22px;
-}
+
 .topScroll{
   padding-left: 25px;
   padding-right: 25px;
