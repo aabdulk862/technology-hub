@@ -68,7 +68,7 @@ function getRandomInt(min, max) {
 
 // Renders a random product image out of an array of product images to the screen
 // Checks to see what kind of image it is, then creates a link that takes the user to the page where the product is located
-// The function is called when the user clicks the "Pick a random gift" button
+// The function is called when the user clicks the "Random Gift" button
 // The function is also called by the window on load
 function randomGift() {
   const numImages = productImages.length;
@@ -90,7 +90,7 @@ function randomGift() {
 }
 
 // Displays the user's name in a welcome message on the homepage
-// The fuction is called when the user presses the enter button
+// The fuction is called when the user presses the "Enter" button
 // The name is saved to local storage
 function setName() {
   localStorage.setItem("name", nameInput.value);
