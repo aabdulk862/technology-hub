@@ -1,32 +1,15 @@
-// The Document's last modification Date and Time are displayed (home page)
+// Variables
 const myDate = new Date(document.lastModified);
 const theMonth = myDate.getMonth() + 1;
 const theDate = myDate.getDate();
 const theYear = myDate.getFullYear();
 const theTime = myDate.toLocaleTimeString();
-
-// Validating that the element exists to avoid errors on the other pages.
-if (document.getElementById("modify") != null) {
-  // Formatting Date and Time
-  document.getElementById("modify").innerHTML =
-    "<I>" +
-    theMonth +
-    "/" +
-    theDate +
-    "/" +
-    theYear +
-    "  at  " +
-    theTime +
-    "</I>";
-}
-
-// Validating that the modify element exists
-if (document.getElementById("year") != null) {
-  // Displays the Year for Copyright Message
-  document.getElementById("year").innerHTML = myDate.getFullYear();
-}
-
-// Array of product image names found on the webstie
+const modified = document.getElementById("modify");
+const copyrightYear = document.getElementById("year");
+const randomImg = document.getElementById("randomImg");
+const randomLink = document.getElementById("randomLink");
+const userName = document.getElementById("userName");
+let nameInput = document.getElementById("nameInput");
 const arr = [
   "tv1.png",
   "tv2.png",
@@ -41,6 +24,28 @@ const arr = [
   "phone3.png",
   "phone4.png",
 ];
+const productImages = shuffleArray(arr); // Shuffles product images to produce a more random reslut
+
+// The Document's last modification Date and Time are formatted and displayed (on home page)
+// Validating that the element exists to avoid errors on the other pages.
+if (modified != null) {
+  modified.innerHTML =
+    "<I>" +
+    theMonth +
+    "/" +
+    theDate +
+    "/" +
+    theYear +
+    "  at  " +
+    theTime +
+    "</I>";
+}
+
+// Displays the Year for Copyright Message
+// Validating that the copyright year element exists
+if (copyrightYear != null) {
+  copyrightYear.innerHTML = myDate.getFullYear();
+}
 
 // Shuffle Function
 function shuffleArray(array) {
@@ -53,9 +58,6 @@ function shuffleArray(array) {
   }
   return array;
 }
-
-// Shuffles product images to produce a more random reslut
-const productImages = shuffleArray(arr);
 
 // Function Returns Random Integer
 function getRandomInt(min, max) {
@@ -70,19 +72,19 @@ function getRandomInt(min, max) {
 // The function is also called by the window on load
 function randomGift() {
   const numImages = productImages.length;
-  randomProduct = productImages[getRandomInt(0, numImages - 1)];
+  const randomProduct = productImages[getRandomInt(0, numImages - 1)];
   // Validating that the random image element exists
-  if (document.getElementById("randomImg") != null) {
-    document.getElementById("randomImg").src = "./img/" + randomProduct;
+  if (randomImg != null) {
+    randomImg.src = "./img/" + randomProduct;
     // Checks to see what type of image it is
     if (randomProduct.includes("tv")) {
-      document.getElementById("randomLink").href = "./tv.html";
+      randomLink.href = "./tv.html";
     }
     if (randomProduct.includes("computer")) {
-      document.getElementById("randomLink").href = "./computers.html";
+      randomLink.href = "./computers.html";
     }
     if (randomProduct.includes("phone")) {
-      document.getElementById("randomLink").href = "./phones.html";
+      randomLink.href = "./phones.html";
     }
   }
 }
@@ -91,10 +93,9 @@ function randomGift() {
 // The fuction is called when the user presses the enter button
 // The name is saved to local storage
 function setName() {
-  const userName = document.getElementById("name").value;
-  localStorage.setItem("name", userName);
-  document.getElementById("userName").textContent = userName;
-  document.getElementById("name").value = "";
+  localStorage.setItem("name", nameInput.value);
+  userName.textContent = nameInput.value;
+  nameInput.value = "";
 }
 
 // Generates Random Gift on Screen
@@ -104,12 +105,11 @@ function setName() {
 window.addEventListener("load", (event) => {
   randomGift();
   // Validating that the input element exists
-  if (document.getElementById("name") != null) {
+  if (nameInput != null) {
     if (localStorage.getItem("name") === null) {
       setName();
     } else {
-      document.getElementById("userName").textContent =
-        localStorage.getItem("name");
+      userName.textContent = localStorage.getItem("name");
     }
   }
 });
