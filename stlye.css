@@ -9,7 +9,6 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
-  background-color: whitesmoke;
 }
 
 /* Messages Stylings */
@@ -17,7 +16,7 @@ body {
 .success-msg,
 .warning-msg,
 .error-msg {
-  margin: 5px 60px;
+  margin: 5px 75px;
   padding: 10px 10px;
   border-radius: 5px;
   font-size: 1.2rem;
@@ -136,7 +135,7 @@ h2 {
 
 .homeLinks {
   background-color: #444f5e;
-  color: whitesmoke;
+  color: white;
   border: 2px solid #444f5e;
   border-radius: 5px;
   padding: 10px;
@@ -147,8 +146,9 @@ h2 {
 }
 
 .homeLinks:hover {
-  background-color: whitesmoke;
+  background-color: white;
   color: #21272e;
+  border: 2px solid #000000;
 }
 
 .links a,
@@ -160,7 +160,8 @@ h2 {
 .homeImage {
   width: 19vw;
   height: auto;
-  filter: brightness(0.98);
+  border: 3px solid #727171;
+  border-radius: 5px;
 }
 
 .flex-container {
@@ -173,11 +174,15 @@ h2 {
   align-content: center;
 }
 
+#home-cards {
+  border-bottom: 2px solid #e8e8e8;
+}
+
 #home-cards > div,
 #tv-cards > div,
 #computer-cards > div,
 #phone-cards > div {
-  margin: 50px 70px;
+  margin: 43px 70px;
 }
 
 .flex-items:nth-child(1) {
@@ -239,14 +244,14 @@ figure h4 {
 }
 
 #randomBtn {
-  width: 22%;
+  width: 20%;
   margin: auto;
   height: 45px;
   cursor: pointer;
   color: white;
   background: #444f5e;
   border: 2px solid #444f5e;
-  border-radius: 20px;
+  border-radius: 5px;
   font-family: "Roboto", sans-serif;
   border: none;
   font-size: 1.5rem;
@@ -254,8 +259,8 @@ figure h4 {
 }
 
 #randomBtn:hover {
-  border: 2px solid #444f5e;
-  background-color: whitesmoke;
+  border: 2px solid #000000;
+  background-color: white;
   color: #21272e;
 }
 
@@ -374,7 +379,7 @@ legend {
   font-size: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .content {
     width: 100%;
     height: auto;
@@ -526,5 +531,17 @@ legend {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .homeImage {
+    width: 16vw;
+  }
+  #home-cards > div,
+  #tv-cards > div,
+  #computer-cards > div,
+  #phone-cards > div {
+    margin: 50px 95px;
   }
 }
