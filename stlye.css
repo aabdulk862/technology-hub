@@ -25,6 +25,7 @@ body {
 .info-msg {
   color: rgb(0, 0, 0);
   background-color: #bde0ff;
+  font-weight: 550;
 }
 
 .success-msg {
@@ -41,6 +42,16 @@ body {
   color: #d8000c;
   background-color: #ffbaba;
 }
+
+#toggle {
+  margin: 5px 75px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 2px solid black;
+}
+
 /* Messages Stylings */
 nav {
   font-size: 20px;
@@ -104,7 +115,7 @@ h2 {
 
 .greetings-btn {
   background-color: #5a5a5a;
-  color: whitesmoke;
+  color: white;
   border: none;
   border-radius: 5px;
   text-align: center;
@@ -242,6 +253,11 @@ figure h4 {
   padding-bottom: 25px;
 }
 
+#randomImg:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 #randomBtn {
   width: 20%;
   margin: auto;
@@ -261,11 +277,6 @@ figure h4 {
   border: 2px solid #000000;
   background-color: white;
   color: #21272e;
-}
-
-#randomImg:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
 }
 
 fieldset {
@@ -379,11 +390,11 @@ legend {
 }
 @media screen and (max-width: 600px) {
   .homeImage {
-    width: 90vw;
+    width: 80vw;
   }
 }
 
-@media all and (min-width: 600px) and (max-width: 1280px) { 
+@media all and (min-width: 600px) and (max-width: 1280px) {
   .homeImage {
     width: 35vw;
   }
@@ -415,6 +426,12 @@ legend {
   .error-msg {
     font-size: 14px;
     margin: 5px 25px;
+  }
+
+  #toggle {
+    margin: 5px 25px;
+    font-size: 14px;
+    border-radius: 5px;
   }
   .greeting {
     padding-top: 20px;
@@ -496,6 +513,7 @@ legend {
     padding: 10px;
     border: none;
   }
+
   .generator {
     padding-left: 25px;
     padding-right: 25px;

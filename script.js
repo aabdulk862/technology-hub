@@ -9,6 +9,8 @@ const copyrightYear = document.getElementById("year");
 const randomImg = document.getElementById("randomImg");
 const randomLink = document.getElementById("randomLink");
 const userName = document.getElementById("userName");
+const elToggle  = document.getElementById("toggle");
+const elContent = document.getElementById("elContent");
 let nameInput = document.getElementById("nameInput");
 const arr = [
   "tv1.png",
@@ -111,5 +113,17 @@ window.addEventListener("load", (event) => {
     } else {
       userName.textContent = localStorage.getItem("name");
     }
+  }
+});
+
+elToggle.addEventListener("click", function() {
+  if (elContent.style.display === 'none') {
+    // SHOWS the message
+    elContent.style.display = 'block';
+    elToggle.innerHTML = 'Hide';
+  } else {
+    // HIDES the message
+    elContent.style.display = 'none';
+    elToggle.innerHTML = 'Show';
   }
 });

@@ -91,8 +91,8 @@
       />
       <button class="greetings-btn" onclick="setName()">Enter</button>
     </div>
-
-    <div class="info-msg">
+    <button id="toggle">Hide</button>
+    <div id='elContent' class="info-msg">
       <i class="fa fa-info-circle"></i>
       Discliamer: This website is developed as an educational project. Certain
       materials are included under the fair use exemption of the U.S. Copyright
@@ -195,13 +195,13 @@
     </div>
 
     <div class="generator" id="gift">
-      <div class="gen-child">
+      <div>
         <h1>
           Need help picking a gift? We got you covered! Just use our random gift
           generator &macr;\_(&#12484;)_/&macr;
         </h1>
       </div>
-      <div class="gen-child gen-1/4">
+      <div>
         <a href="" id="randomLink"
           ><img
             id="randomImg"
@@ -210,7 +210,7 @@
             title="Random Gift"
         /></a>
       </div>
-      <div class="gen-child">
+      <div>
         <input
           type="button"
           name="random"
@@ -218,7 +218,6 @@
           value="Random Gift"
           onclick="randomGift()"
         />
-        
       </div>
     </div>
 
