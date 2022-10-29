@@ -121,11 +121,11 @@ elToggle.addEventListener("click", function() {
   if (elContent.style.display === 'none') {
     // SHOWS the message
     elContent.style.display = 'block';
-    elToggle.innerHTML = 'Disclaimer ⮛';
+    elToggle.innerHTML = 'Hide';
   } else {
     // HIDES the message
     elContent.style.display = 'none';
-    elToggle.innerHTML = 'Disclaimer ⮚';
+    elToggle.innerHTML = 'Show';
   }
 });
 
