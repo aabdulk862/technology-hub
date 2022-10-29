@@ -49,15 +49,15 @@ body {
 }
 
 .background-3 {
-  background: #1A936F; /* fallback for old browsers */
+  background: #1a936f; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to left,
-    #1A936F,
+    #1a936f,
     #fff
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to left,
-    #1A936F,
+    #1a936f,
     #fff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -75,7 +75,7 @@ body {
 
 .info-msg {
   color: rgb(0, 0, 0);
-  background-color: #EDEDED;
+  background-color: #768da700;
   font-weight: 550;
 }
 
@@ -98,10 +98,9 @@ body {
   margin: 0px 70px;
   font-size: 1.2rem;
   border-radius: 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: #768da700;
   color: black;
   border: 0px solid rgb(255, 255, 255);
-  text-decoration: underline;
 }
 
 /* Messages Stylings */
@@ -135,7 +134,7 @@ header img {
 
 .content h1,
 h2 {
-  font-size: 32px;
+  font-size: 35px;
   text-align: center;
 }
 
@@ -166,7 +165,7 @@ h2 {
 }
 
 .greetings-btn {
-  background-color: #5a5a5a;
+  background-color: #444f5e;
   color: white;
   border: none;
   border-radius: 5px;
@@ -174,6 +173,11 @@ h2 {
   text-decoration: none;
   width: 90px;
   font-size: 1.3rem;
+}
+
+.greetings-btn:hover {
+  background-color: #8098b4;
+  color: white;
 }
 
 .gift-btn {
@@ -204,9 +208,16 @@ h2 {
 }
 
 .homeLinks:hover {
-  background-color: white;
-  color: #21272e;
-  border: 2px solid #000000;
+  background-color: #8098b4;
+  color: white;
+  border: 2px solid #8098b4;
+}
+
+.homeLinks:active,
+.greetings-btn:active {
+  background-color: #8098b4;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .homeImage {
@@ -301,11 +312,6 @@ figure h4 {
   padding-bottom: 25px;
 }
 
-#randomImg:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
 #randomBtn {
   width: 20%;
   margin: auto;
@@ -322,9 +328,15 @@ figure h4 {
 }
 
 #randomBtn:hover {
-  border: 2px solid #000000;
-  background-color: white;
-  color: #21272e;
+  border: 1px solid #8098b4;
+  background-color: #8098b4;
+  color: white
+}
+
+#randomBtn:active {
+  background-color: #8098b4;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 fieldset {
