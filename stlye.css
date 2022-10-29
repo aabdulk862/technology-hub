@@ -15,7 +15,7 @@ body {
 .background-toggles {
   display: flex;
   justify-content: left;
-  padding-left: 70px;
+  padding-left: 75px;
   padding-bottom: 30px;
   align-items: center;
   gap: 20px;
@@ -512,7 +512,7 @@ legend {
   }
 
   #toggle {
-    margin: 5px 25px;
+    margin: 0px 25px;
     font-size: 14px;
     border-radius: 5px;
     text-decoration: underline;
