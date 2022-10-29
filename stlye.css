@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: left;
   padding-left: 75px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   align-items: center;
   gap: 20px;
   font-weight: 500;
@@ -132,7 +132,7 @@ header img {
   height: auto;
   padding-left: 90px;
   padding-right: 90px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   padding-top: 20px;
 }
 
@@ -306,9 +306,9 @@ figure h4 {
   padding: 20px;
 }
 
-.generator h1 {
-  font-size: 28px;
-  padding: 15px;
+.generator >h1 {
+  font-size: 1.8rem;
+  padding: 30px;
 }
 
 #randomImg {
@@ -467,7 +467,7 @@ legend {
   .background-toggles {
     padding-left: 20px;
     padding-bottom: 30px;
-    font-size: 14px;
+    font-size: 0.9rem;
     gap: 5px;
   }
 
@@ -488,13 +488,13 @@ legend {
     width: 100%;
     height: auto;
     padding-top: 40px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     padding-left: 25px;
     padding-right: 25px;
   }
 
   .content h1 {
-    font-size: 22px;
+    font-size: 1.5rem;
   }
 
   header img {
@@ -507,20 +507,20 @@ legend {
   .success-msg,
   .warning-msg,
   .error-msg {
-    font-size: 14px;
+    font-size: 1rem;
     margin: 5px 25px;
   }
 
   #toggle {
     margin: 0px 25px;
-    font-size: 14px;
+    font-size: 1rem;
     border-radius: 5px;
     text-decoration: underline;
     cursor: pointer;
   }
 
   .greeting > label {
-    font-size: 13px;
+    font-size: 0.9rem;
   }
 
   .greeting > input {
@@ -614,7 +614,7 @@ legend {
     padding-left: 10px;
     margin: auto;
   }
-  .generator h1 {
+  .generator > h1 {
     font-size: 22px;
     text-align: center;
   }

@@ -145,7 +145,7 @@ elToggle.addEventListener("click", function() {
   } else {
     // HIDES the message
     elContent.style.display = 'none';
-    elToggle.innerHTML = 'Show ->';
+    elToggle.innerHTML = 'Show >';
   }
 });
 
