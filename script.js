@@ -89,6 +89,12 @@ function randomGift() {
     if (randomProduct.includes("phone")) {
       randomLink.href = "./phones.html";
     }
+    randomImg.addEventListener('mouseover', ()=>{
+      randomImg.src = './img/gift.png';
+    }, false);
+    randomImg.addEventListener('mouseout', ()=>{
+      randomImg.src = "./img/" + randomProduct;
+    }, false);
   }
 }
 
@@ -148,4 +154,5 @@ elToggle.addEventListener("click", function() {
     elToggle.innerHTML = 'Show >';
   }
 });
+
 

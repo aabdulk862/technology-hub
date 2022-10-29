@@ -307,7 +307,7 @@ figure h4 {
 }
 
 .generator >h1 {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   padding: 30px;
 }
 
@@ -319,6 +319,7 @@ figure h4 {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   padding-bottom: 25px;
+  border-radius: 5px;
 }
 
 #randomBtn {
