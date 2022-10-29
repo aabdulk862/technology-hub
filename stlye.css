@@ -44,12 +44,13 @@ body {
 }
 
 #toggle {
-  margin: 5px 75px;
+  margin: 0px 70px;
   font-size: 1.2rem;
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
   color: black;
-  border: 2px solid black;
+  border: 2px solid rgb(255, 255, 255);
+  text-decoration: underline;
 }
 
 /* Messages Stylings */
