@@ -19,7 +19,8 @@ body {
   padding-bottom: 30px;
   align-items: center;
   gap: 20px;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .background-toggles > button {
@@ -131,8 +132,8 @@ header img {
   height: auto;
   padding-left: 90px;
   padding-right: 90px;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .content h1,
@@ -140,8 +141,8 @@ h2 {
   font-size: 2rem;
   text-align: center;
   font-weight: 500;
-  
 }
+
 
 #userName {
   color: #000000;
@@ -155,6 +156,7 @@ h2 {
 
 .greeting > label {
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .greeting > input {
@@ -462,8 +464,9 @@ legend {
 
   .background-toggles{
     padding-left: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 14px;
+    gap: 5px;
   }
 
   .background-toggles > button {
@@ -482,7 +485,8 @@ legend {
   .content {
     width: 100%;
     height: auto;
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -512,10 +516,7 @@ legend {
     text-decoration: underline;
     cursor: pointer;
   }
-  .greeting {
-    padding-top: 20px;
-  }
-
+ 
   .greeting > label {
     font-size: 13px;
   }
