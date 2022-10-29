@@ -141,11 +141,11 @@ elToggle.addEventListener("click", function() {
   if (elContent.style.display === 'none') {
     // SHOWS the message
     elContent.style.display = 'block';
-    elToggle.innerHTML = 'Hide';
+    elToggle.innerHTML = 'Hide Info -->';
   } else {
     // HIDES the message
     elContent.style.display = 'none';
-    elToggle.innerHTML = 'Show';
+    elToggle.innerHTML = 'Show Info -->';
   }
 });
 
