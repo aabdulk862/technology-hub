@@ -71,7 +71,7 @@
     <header>
       <img src="./img/banner.png" alt="Banner" />
     </header>
-
+   
     <div class="content">
       <h1>Welcome to Technology Hub <span id="userName"></span>!</h1>
       <h1>Your one-stop-shop for your electronic devices!</h1>
@@ -91,13 +91,21 @@
       />
       <button class="greetings-btn" onclick="setName()">Enter</button>
     </div>
+ <!-- Background Toggle -->
+ <div class="background-toggles" title="Change Background">
+  <button class="background-1" onclick="changeBackground('1')"></button>
+  <button class="background-2" onclick="changeBackground('2')"></button>
+  <button class="background-3" onclick="changeBackground('3')"></button>
+</div>
     <button id="toggle">Hide</button>
-    <div id='elContent' class="info-msg">
-      <i class="fa fa-info-circle"></i>
-      Discliamer: This website is developed as an educational project. Certain
-      materials are included under the fair use exemption of the U.S. Copyright
-      Law and have been prepared according to the multimedia fair use guidelines
-      and are restricted from further use.
+    <div id="elContent">
+      <div class="info-msg">
+        <i class="fa fa-info-circle"></i>
+        Discliamer: This website is developed as an educational project. Certain
+        materials are included under the fair use exemption of the U.S.
+        Copyright Law and have been prepared according to the multimedia fair
+        use guidelines and are restricted from further use.
+      </div>
     </div>
 
     <div class="flex-container hover01 column" id="homelinksnav">
