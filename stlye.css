@@ -132,21 +132,23 @@ header img {
   height: auto;
   padding-left: 90px;
   padding-right: 90px;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 .content h1,
 h2 {
-  font-size: 2rem;
+  font-size: 2.1rem;
   text-align: center;
   font-weight: 500;
 }
 
-
 #userName {
-  color: #000000;
-  font-weight: 950;
+  font-weight: 700;
+}
+
+#last {
+  font-style: italic;
 }
 
 .greeting {
@@ -337,7 +339,7 @@ figure h4 {
 #randomBtn:hover {
   border: 1px solid #8098b4;
   background-color: #8098b4;
-  color: white
+  color: white;
 }
 
 #randomBtn:active {
@@ -453,8 +455,8 @@ legend {
   padding-right: 90px;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 20px;
-  text-decoration: underline;
+  font-size: 1.2rem;
+  text-decoration: underline !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -462,7 +464,7 @@ legend {
     width: 70vw;
   }
 
-  .background-toggles{
+  .background-toggles {
     padding-left: 20px;
     padding-bottom: 30px;
     font-size: 14px;
@@ -516,7 +518,7 @@ legend {
     text-decoration: underline;
     cursor: pointer;
   }
- 
+
   .greeting > label {
     font-size: 13px;
   }
