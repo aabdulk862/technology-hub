@@ -39,30 +39,14 @@ body {
 
 .background-2 {
   background: #85b7be; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #85b7be,
-    #ffffff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #85b7be,
-    #ffffff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to left, #85b7be, #ffffff);
+  background: linear-gradient(to bottom, #718ca1d2, #ffffff);
 }
 
 .background-3 {
-  background: #1a936f; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to left,
-    #1a936f,
-    #fff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to left,
-    #1a936f,
-    #fff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #88d498; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #1a936f, #fff);
+  background: linear-gradient(to bottom, #5f926ac7, #fff);
 }
 
 /* Messages Stylings */
@@ -73,13 +57,14 @@ body {
   margin: 5px 75px;
   padding: 10px 10px;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .info-msg {
   color: rgb(0, 0, 0);
-  background-color: hsla(212, 55%, 68%, 0.616);
+  background-color: #ebebeb;
   font-weight: 550;
+  border: 2px solid #444444;
 }
 
 .success-msg {
@@ -132,13 +117,13 @@ header img {
   height: auto;
   padding-left: 90px;
   padding-right: 90px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-top: 20px;
 }
 
 .content h1,
 h2 {
-  font-size: 2.1rem;
+  font-size: 2rem;
   text-align: center;
   font-weight: 500;
 }
@@ -306,7 +291,7 @@ figure h4 {
   padding: 20px;
 }
 
-.generator >h1 {
+.generator > h1 {
   font-size: 1.7rem;
   padding: 30px;
 }
@@ -314,11 +299,7 @@ figure h4 {
 #randomImg {
   width: 27vw;
   margin: auto;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
   border-radius: 5px;
 }
 
@@ -508,7 +489,7 @@ legend {
   .success-msg,
   .warning-msg,
   .error-msg {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 5px 25px;
   }
 

@@ -9,7 +9,7 @@ const copyrightYear = document.getElementById("year");
 const randomImg = document.getElementById("randomImg");
 const randomLink = document.getElementById("randomLink");
 const userName = document.getElementById("userName");
-const elToggle  = document.getElementById("toggle");
+const elToggle = document.getElementById("toggle");
 const elContent = document.getElementById("elContent");
 let nameInput = document.getElementById("nameInput");
 const { body } = document;
@@ -89,12 +89,20 @@ function randomGift() {
     if (randomProduct.includes("phone")) {
       randomLink.href = "./phones.html";
     }
-    randomImg.addEventListener('mouseover', ()=>{
-      randomImg.src = './img/gift.png';
-    }, false);
-    randomImg.addEventListener('mouseout', ()=>{
-      randomImg.src = "./img/" + randomProduct;
-    }, false);
+    randomImg.addEventListener(
+      "mouseover",
+      () => {
+        randomImg.src = "./img/gift.png";
+      },
+      false
+    );
+    randomImg.addEventListener(
+      "mouseout",
+      () => {
+        randomImg.src = "./img/" + randomProduct;
+      },
+      false
+    );
   }
 }
 
@@ -110,21 +118,27 @@ function setName() {
 function changeBackground(number) {
   // Chech if background is already showing
   let prevBG;
-  if(body.className){
-      prevBG = body.className;
+  if (body.className) {
+    prevBG = body.className;
   }
   // Reset CSS class for body
-  body.className = '';
-switch (number) {
-  case "1":
-      return (prevBG === 'background-1' ? false : body.classList.add('background-1'));
-  case "2":
-      return (prevBG === 'background-2' ? false : body.classList.add('background-2'));
-  case "3":
-      return (prevBG === 'background-3' ? false : body.classList.add('background-3'));
-  default:
-    break;
-}
+  body.className = "";
+  switch (number) {
+    case "1":
+      return prevBG === "background-1"
+        ? false
+        : body.classList.add("background-1");
+    case "2":
+      return prevBG === "background-2"
+        ? false
+        : body.classList.add("background-2");
+    case "3":
+      return prevBG === "background-3"
+        ? false
+        : body.classList.add("background-3");
+    default:
+      break;
+  }
 }
 
 // Generates Random Gift on Screen
@@ -143,16 +157,14 @@ window.addEventListener("load", (event) => {
   }
 });
 
-elToggle.addEventListener("click", function() {
-  if (elContent.style.display === 'none') {
+elToggle.addEventListener("click", function () {
+  if (elContent.style.display === "none") {
     // SHOWS the message
-    elContent.style.display = 'block';
-    elToggle.innerHTML = 'Hide -';
+    elContent.style.display = "block";
+    elToggle.innerHTML = "Hide -";
   } else {
     // HIDES the message
-    elContent.style.display = 'none';
-    elToggle.innerHTML = 'Show >';
+    elContent.style.display = "none";
+    elToggle.innerHTML = "Show >";
   }
 });
-
-
