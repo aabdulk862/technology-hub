@@ -11,6 +11,8 @@ const randomLink = document.getElementById("randomLink");
 const userName = document.getElementById("userName");
 const elToggle = document.getElementById("toggle");
 const elContent = document.getElementById("elContent");
+const money = document.getElementById("money");
+const playAnimation = document.getElementById("play");
 let nameInput = document.getElementById("nameInput");
 const { body } = document;
 const arr = [
@@ -31,7 +33,7 @@ const productImages = shuffleArray(arr); // Shuffles product images to produce a
 
 // The Document's last modification Date and Time are formatted and displayed (on home page)
 // Validating that the element exists to avoid errors on the other pages.
-if (modified != null) {
+if (modified) {
   modified.innerHTML =
     "<I>" +
     theMonth +
@@ -46,7 +48,7 @@ if (modified != null) {
 
 // Displays the Year for Copyright Message
 // Validating that the copyright year element exists
-if (copyrightYear != null) {
+if (copyrightYear) {
   copyrightYear.innerHTML = myDate.getFullYear();
 }
 
@@ -77,7 +79,7 @@ function randomGift() {
   const numImages = productImages.length;
   const randomProduct = productImages[getRandomInt(0, numImages - 1)];
   // Validating that the random image element exists
-  if (randomImg != null) {
+  if (randomImg) {
     randomImg.src = "./img/" + randomProduct;
     // Checks to see what type of image it is
     if (randomProduct.includes("tv")) {
@@ -141,6 +143,18 @@ function changeBackground(number) {
   }
 }
 
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <=
+      (window.innerWidth - 30 || document.documentElement.clientWidth - 30)
+  );
+}
+
 // Generates Random Gift on Screen
 // If name is found is found in local storage, the name is displayed to the screen
 // If name is not found, the setName function is called
@@ -148,7 +162,7 @@ function changeBackground(number) {
 window.addEventListener("load", (event) => {
   randomGift();
   // Validating that the input element exists
-  if (nameInput != null) {
+  if (nameInput) {
     if (localStorage.getItem("name") === null) {
       setName();
     } else {
@@ -157,14 +171,28 @@ window.addEventListener("load", (event) => {
   }
 });
 
-elToggle.addEventListener("click", function () {
-  if (elContent.style.display === "none") {
-    // SHOWS the message
-    elContent.style.display = "block";
-    elToggle.innerHTML = "Hide -";
-  } else {
-    // HIDES the message
-    elContent.style.display = "none";
-    elToggle.innerHTML = "Show >";
-  }
-});
+if (elToggle) {
+  elToggle.addEventListener("click", function () {
+    if (elContent.style.display === "none") {
+      // SHOWS the message
+      elContent.style.display = "block";
+      elToggle.innerHTML = "Hide -";
+    } else {
+      // HIDES the message
+      elContent.style.display = "none";
+      elToggle.innerHTML = "Show >";
+    }
+  });
+}
+
+play.onclick = function () {
+  let start = Date.now();
+
+  let timer = setInterval(function () {
+    let timePassed = Date.now() - start;
+
+    money.style.left = timePassed / 2 + "px";
+
+    if (timePassed > 5000 || !isInViewport(money)) clearInterval(timer);
+  }, 20);
+};

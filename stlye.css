@@ -171,7 +171,7 @@ h2 {
 }
 
 .greetings-btn:hover {
-  background-color: #8098b4;
+  background-color: #444f5e8f;
   color: white;
 }
 
@@ -193,25 +193,25 @@ h2 {
 .homeLinks {
   background-color: #444f5e;
   color: white;
-  border: 2px solid #444f5e;
   border-radius: 5px;
   padding: 10px;
   text-align: center;
   text-decoration: none;
   width: 170px;
   font-size: 1.2rem;
+  text-decoration: none;
+  border: none;
 }
 
 .homeLinks:hover {
-  background-color: #8098b4;
+  background-color: #444f5e8f;
   color: white;
-  border: 2px solid #8098b4;
 }
 
 .homeLinks:active,
 .greetings-btn:active {
-  background-color: #8098b4;
-  box-shadow: 0 5px #666;
+  background-color: #444f5e8f;
+  box-shadow: 0 5px rgb(39, 39, 39);;
   transform: translateY(4px);
 }
 
@@ -312,7 +312,6 @@ figure h4 {
   cursor: pointer;
   color: white;
   background: #444f5e;
-  border: 2px solid #444f5e;
   border-radius: 5px;
   font-family: "Roboto", sans-serif;
   border: none;
@@ -321,15 +320,28 @@ figure h4 {
 }
 
 #randomBtn:hover {
-  border: 1px solid #8098b4;
-  background-color: #8098b4;
+  background-color: #444f5e8f;
   color: white;
 }
 
 #randomBtn:active {
-  background-color: #8098b4;
-  box-shadow: 0 5px #666;
+  background-color: #444f5e8f;
+  box-shadow: 0 5px rgb(39, 39, 39);
   transform: translateY(4px);
+}
+
+#rewards-text{
+  width: 100%;
+  height: auto;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#rewards-text > h1{
+  font-size: 1.9rem;
+  text-align: center;
 }
 
 fieldset {
@@ -339,14 +351,14 @@ fieldset {
 }
 
 legend {
-  background-color: #5c848e;
+  background-color: #444f5e;
   color: white;
   padding: 5px 10px;
 }
 
 .form-container {
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding-top: 0px;
+  padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
   margin-left: 50%;
@@ -355,15 +367,25 @@ legend {
 
 .form-btn {
   width: 120.93px;
-  height: 50px;
   cursor: pointer;
   color: white;
-  background: #5c848e;
+  background: #444f5e;
   border-radius: 20px;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
   margin-right: 20px;
   border: none;
+  font-size: 1.3rem;
+}
+
+.form-btn:hover{
+  background-color: #444f5e8f;
+  color: white;
+}
+
+.form-btn:active {
+  background-color: #444f5e8f;
+  box-shadow: 0 5px rgb(39, 39, 39);;
+  transform: translateY(4px);
 }
 
 .form-group {
@@ -391,6 +413,13 @@ legend {
 #date {
   width: 140px;
   background: white;
+}
+#benefit-heading{
+  border-top: 1px solid #444;
+}
+
+#benefit-heading >h1{
+  font-size: 1.9rem;
 }
 
 .benefits {
@@ -426,7 +455,7 @@ legend {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #cfcdbc;
+  background-color: #ddd7a2;
   color: black;
 }
 
@@ -443,6 +472,42 @@ legend {
   text-decoration: underline !important;
 }
 
+#animate{
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+#money {
+  position: relative;
+  cursor: pointer;
+  width: 100px;
+}
+
+#play-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+#play{
+  background-color: #444f5e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  width: 100px;
+  font-size: 1.5rem;
+}
+
+#play:hover{
+  background-color: #444f5e8f;
+  color: white;
+}
+#play:active {
+  background-color: #444f5e8f;
+  box-shadow: 0 5px rgb(39, 39, 39);;
+  transform: translateY(4px);
+}
 @media screen and (max-width: 600px) {
   .homeImage {
     width: 70vw;
@@ -480,6 +545,35 @@ legend {
 
   .content h1 {
     font-size: 1.7rem;
+  }
+
+  #rewards-text{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  #rewards-text > h1{
+    font-size: 1.3rem;
+  }
+  
+  #animate{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+  }
+  
+  #money {
+    position: relative;
+    cursor: pointer;
+    width: 60px;
+  }
+
+  #play{
+    font-size: 1.5rem;
   }
 
   header img {
