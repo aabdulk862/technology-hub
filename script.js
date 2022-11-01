@@ -9,12 +9,12 @@ const copyrightYear = document.getElementById("year");
 const randomImg = document.getElementById("randomImg");
 const randomLink = document.getElementById("randomLink");
 const userName = document.getElementById("userName");
+let nameInput = document.getElementById("nameInput");
 const elToggle = document.getElementById("toggle");
 const elContent = document.getElementById("elContent");
 const money = document.getElementById("money");
 const playAnimation = document.getElementById("play");
-const animate = document.getElementById('animate')
-let nameInput = document.getElementById("nameInput");
+const animate = document.getElementById("animate");
 const { body } = document;
 const arr = [
   "tv1.png",
@@ -29,6 +29,10 @@ const arr = [
   "phone2.png",
   "phone3.png",
   "phone4.png",
+  "headphones1.png",
+  "headphones2.png",
+  "headphones3.png",
+  "headphones4.png",
 ];
 const productImages = shuffleArray(arr); // Shuffles product images to produce a more random reslut
 
@@ -91,6 +95,9 @@ function randomGift() {
     }
     if (randomProduct.includes("phone")) {
       randomLink.href = "./phones.html";
+    }
+    if (randomProduct.includes("headphones")) {
+      randomLink.href = "./audio.html";
     }
     randomImg.addEventListener(
       "mouseover",
@@ -185,8 +192,6 @@ if (elToggle) {
     }
   });
 }
-
-
 
 if (playAnimation) {
   animate.style.display = "none";

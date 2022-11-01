@@ -243,11 +243,22 @@ h2 {
   border-bottom: 1px solid #444;
 }
 
-#home-cards > div,
+#home-cards > div{
+  margin: 40px 70px;
+}
+
 #tv-cards > div,
 #computer-cards > div,
-#phone-cards > div {
-  margin: 43px 70px;
+#phone-cards > div,
+#audio-cards > div {
+  margin: 10px 70px;
+}
+
+#tv-cards img,
+#computer-cards img,
+#phone-cards img,
+#audio-cards img {
+  width: 23vw;
 }
 
 .flex-items:nth-child(1) {
@@ -346,7 +357,7 @@ figure h4 {
 
 #animate {
   padding-left: 100px;
-  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 #money {
@@ -397,7 +408,7 @@ legend {
 }
 
 .form-container {
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 40px;
   padding-left: 40px;
   padding-right: 40px;
@@ -622,6 +633,13 @@ legend {
     margin-bottom: 20px;
   }
 
+  #tv-cards img,
+  #computer-cards img,
+  #phone-cards img,
+  #audio-cards img {
+    width: 80vw;
+  }
+
   .homeLinks {
     width: 140px;
     font-size: 1rem;
@@ -738,7 +756,8 @@ legend {
   #home-cards > div,
   #tv-cards > div,
   #computer-cards > div,
+  #audio-cards > div,
   #phone-cards > div {
-    margin: 50px 95px;
+    padding:  20px 70px;
   }
 }
