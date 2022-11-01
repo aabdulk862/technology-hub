@@ -74,75 +74,76 @@
       </h1>
     </div>
     <div id="play-wrapper">
-      <button id="play">Play </button>
+      <button id="play">Save</button>
     </div>
+
     <div id="animate">
-      <img id="money" src="./img/money-wings.svg">
+      <img id="money" src="./img/money-wings.svg" />
     </div>
-      <div class="form-container">
-        <!-- Form -->
-        <form id="form">
-          <fieldset>
-            <legend>Sign up Now!</legend>
-            <!-- Full Name -->
-            <div class="form-group">
-              <label for="full-name">Full Name </label>
-              <input
-                type="text"
-                id="full-name"
-                name="name"
-                placeholder="Full Name"
-                required
-                minlength="3"
-                maxlength="100"
-              />
-            </div>
-            <!-- Email Address -->
-            <div class="form-group">
-              <label for="email">Email Address</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="email@address.com"
-                required
-              />
-            </div>
-            <!-- Phone Number -->
-            <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="555-555-5555"
-                required
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              />
-            </div>
-            <!-- Date of Birth -->
-            <div class="form-group">
-              <label for="phone">Date Of Birth</label>
-              <input type="date" id="date" name="date" />
-            </div>
-            <!-- Gender -->
-            <div class="form-group">
-              <select name="gender">
-                <option value="none" selected>Gender</option>
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">other</option>
-              </select>
-            </div>
-            <button class="form-btn" type="submit">Submit</button>
-            <button class="form-btn" type="reset">Reset</button>
-          </fieldset>
-        </form>
-      </div>
-    
-    <div class="content" id="benefit-heading"><h1>Benefits to our rewards program:</h1></div>
+
+    <div class="form-container">
+      <!-- Form -->
+      <form id="form">
+        <fieldset>
+          <legend>Sign up Now!</legend>
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="full-name">Full Name </label>
+            <input
+              type="text"
+              id="full-name"
+              name="name"
+              placeholder="Full Name"
+              required
+              minlength="3"
+              maxlength="100"
+            />
+          </div>
+          <!-- Email Address -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@address.com"
+              required
+            />
+          </div>
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="555-555-5555"
+              required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
+          </div>
+          <!-- Date of Birth -->
+          <div class="form-group">
+            <label for="phone">Date Of Birth</label>
+            <input type="date" id="date" name="date" />
+          </div>
+          <!-- Gender -->
+          <div class="form-group">
+            <select name="gender">
+              <option value="none" selected>Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">other</option>
+            </select>
+          </div>
+          <button class="form-btn" type="submit">Submit</button>
+          <button class="form-btn" type="reset">Reset</button>
+        </fieldset>
+      </form>
+    </div>
 
     <div class="benefits">
+      <h1 id="benefit-heading" >Benefits to our rewards program:</h1>
       <table>
         <tr>
           <th></th>
@@ -188,7 +189,6 @@
         </tr>
       </table>
     </div>
-   
     <!-- Script -->
     <script src="script.js"></script>
     <script

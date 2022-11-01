@@ -13,6 +13,7 @@ const elToggle = document.getElementById("toggle");
 const elContent = document.getElementById("elContent");
 const money = document.getElementById("money");
 const playAnimation = document.getElementById("play");
+const animate = document.getElementById('animate')
 let nameInput = document.getElementById("nameInput");
 const { body } = document;
 const arr = [
@@ -185,14 +186,20 @@ if (elToggle) {
   });
 }
 
-play.onclick = function () {
-  let start = Date.now();
 
-  let timer = setInterval(function () {
-    let timePassed = Date.now() - start;
 
-    money.style.left = timePassed / 2 + "px";
-
-    if (timePassed > 5000 || !isInViewport(money)) clearInterval(timer);
-  }, 20);
-};
+if (playAnimation) {
+  animate.style.display = "none";
+  playAnimation.onclick = function () {
+    animate.style.display = "block";
+    let start = Date.now();
+    let timer = setInterval(function () {
+      let timePassed = Date.now() - start;
+      money.style.left = timePassed / 3.5 + "px";
+      if (timePassed > 8000 || !isInViewport(money)) {
+        clearInterval(timer);
+        animate.style.display = "none";
+      }
+    }, 20);
+  };
+}
