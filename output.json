@@ -1,16 +1,10 @@
 {
   "citations": {
-    "pages": [
-      "Homepage",
-      "TV & Video",
-      "Computers",
-      "Phones"
-    ],
-    "li": [
+    "sources": [
       {
-        "p": {
-          "b": "Confetti Falling Animation",
-          "a": {
+        "source": {
+          "link": {
+            "name": "Confetti Falling Animation",
             "@href": "https://www.cssscript.com/confetti-falling-animation/",
             "@target": "_blank",
             "#text": "https://www.cssscript.com/confetti-falling-animation/"
@@ -18,9 +12,9 @@
         }
       },
       {
-        "p": {
-          "b": "tv television remote 2",
-          "a": {
+        "source": {
+          "link": {
+            "name": "tv television remote 2",
             "@href": "https://iconduck.com/icons/116536/tv-television-remote-2",
             "@target": "_blank",
             "#text": "https://iconduck.com/icons/116536/tv-television-remote-2"
@@ -28,9 +22,9 @@
         }
       },
       {
-        "p": {
-          "b": "personal computer",
-          "a": {
+        "source": {
+          "link": {
+            "name": "personal computer",
             "@href": "https://iconduck.com/emojis/98018/personal-computer",
             "@target": "_blank",
             "#text": "https://iconduck.com/emojis/98018/personal-computer"
@@ -38,9 +32,9 @@
         }
       },
       {
-        "p": {
-          "b": "mobile phone",
-          "a": {
+        "source": {
+          "link": {
+            "name": "mobile phone",
             "@href": "https://iconduck.com/emojis/16592/mobile-phone",
             "@target": "_blank",
             "#text": "https://iconduck.com/emojis/16592/mobile-phone"
@@ -48,9 +42,9 @@
         }
       },
       {
-        "p": {
-          "b": "audio headphones",
-          "a": {
+        "source": {
+          "link": {
+            "name": "audio headphones",
             "@href": "https://iconduck.com/icons/61175/audio-headphones",
             "@target": "_blank",
             "#text": "https://iconduck.com/icons/61175/audio-headphones"
@@ -58,9 +52,9 @@
         }
       },
       {
-        "p": {
-          "b": "input gaming",
-          "a": {
+        "source": {
+          "link": {
+            "name": "input gaming",
             "@href": "https://iconduck.com/icons/61196/input-gaming",
             "@target": "_blank",
             "#text": "https://iconduck.com/icons/61196/input-gaming"
@@ -68,9 +62,9 @@
         }
       },
       {
-        "p": {
-          "b": "discount shopping",
-          "a": {
+        "source": {
+          "link": {
+            "name": "discount shopping",
             "@href": "https://iconduck.com/illustrations/107956/discount-shopping",
             "@target": "_blank",
             "#text": "https://iconduck.com/illustrations/107956/discount-shopping"
@@ -78,9 +72,19 @@
         }
       },
       {
-        "p": {
-          "b": "Android TV",
-          "a": {
+        "source": {
+          "link": {
+            "name": "wrapped gift",
+            "@href": "https://iconduck.com/emojis/44447/wrapped-gift",
+            "@target": "_blank",
+            "#text": "https://iconduck.com/emojis/44447/wrapped-gift"
+          }
+        }
+      },
+      {
+        "source": {
+          "link": {
+            "name": "Android TV",
             "@href": "https://pixabay.com/photos/tv-android-tv-television-network-627876/",
             "@target": "_blank",
             "#text": "https://pixabay.com/photos/tv-android-tv-television-network-627876/"
@@ -88,9 +92,9 @@
         }
       },
       {
-        "p": {
-          "b": "Black TV",
-          "a": {
+        "source": {
+          "link": {
+            "name": "Black TV",
             "@href": "https://pixabay.com/illustrations/tv-watch-football-watch-tv-gawk-1271650/",
             "@target": "_blank",
             "#text": "https://pixabay.com/illustrations/tv-watch-football-watch-tv-gawk-1271650/"
@@ -98,9 +102,9 @@
         }
       },
       {
-        "p": {
-          "b": "Vintage TV",
-          "a": {
+        "source": {
+          "link": {
+            "name": "Vintage TV",
             "@href": "https://pixabay.com/photos/vintage-tv-tv-ancient-old-1116587/",
             "@target": "_blank",
             "#text": "https://pixabay.com/photos/vintage-tv-tv-ancient-old-1116587/"
@@ -108,9 +112,9 @@
         }
       },
       {
-        "p": {
-          "b": "Samsung TV",
-          "a": {
+        "source": {
+          "link": {
+            "name": "Samsung TV",
             "@href": "https://pixabay.com/photos/netflix-peliculas-youtube-digital-3733812/",
             "@target": "_blank",
             "#text": "https://pixabay.com/photos/netflix-peliculas-youtube-digital-3733812/"
@@ -118,9 +122,9 @@
         }
       },
       {
-        "p": {
-          "b": "iMac",
-          "a": {
+        "source": {
+          "link": {
+            "name": "iMac",
             "@href": "https://pixabay.com/photos/apple-imac-ipad-workplace-606761/",
             "@target": "_blank",
             "#text": "https://pixabay.com/photos/apple-imac-ipad-workplace-606761/"
@@ -128,9 +132,9 @@
         }
       },
       {
-        "p": {
-          "b": "Dell laptop",
-          "a": {
+        "source": {
+          "link": {
+            "name": "Dell laptop",
             "@href": "https://unsplash.com/photos/Gi3iUJ1FwxI",
             "@target": "_blank",
             "#text": "https://unsplash.com/photos/Gi3iUJ1FwxI"
@@ -138,9 +142,9 @@
         }
       },
       {
-        "p": {
-          "b": "Microsoft Surface",
-          "a": {
+        "source": {
+          "link": {
+            "name": "Microsoft Surface",
             "@href": "https://unsplash.com/photos/139Uv2t0Ez0",
             "@target": "_blank",
             "#text": "https://unsplash.com/photos/139Uv2t0Ez0"
@@ -148,9 +152,9 @@
         }
       },
       {
-        "p": {
-          "b": "MacBook pro",
-          "a": {
+        "source": {
+          "link": {
+            "name": "MacBook pro",
             "@href": "https://unsplash.com/photos/1SAnrIxw5OY",
             "@target": "_blank",
             "#text": "https://unsplash.com/photos/1SAnrIxw5OY"
@@ -158,9 +162,9 @@
         }
       },
       {
-        "p": {
-          "b": "iPhone X",
-          "a": {
+        "source": {
+          "link": {
+            "name": "iPhone X",
             "@href": "https://unsplash.com/photos/xdLXPic3Wfk",
             "@target": "_blank",
             "#text": "https://unsplash.com/photos/xdLXPic3Wfk"
@@ -168,9 +172,9 @@
         }
       },
       {
-        "p": {
-          "b": "Samsung Galaxy",
-          "a": {
+        "source": {
+          "link": {
+            "name": "Samsung Galaxy",
             "@href": "https://unsplash.com/photos/PdALQmfEqvE",
             "@target": "_blank",
             "#text": "https://unsplash.com/photos/PdALQmfEqvE"
@@ -178,9 +182,9 @@
         }
       },
       {
-        "p": {
-          "b": "Sony Android",
-          "a": {
+        "source": {
+          "link": {
+            "name": "Sony Android",
             "@href": "https://unsplash.com/photos/rGBtpaBQ3LA",
             "@target": "_blank",
             "#text": "https://unsplash.com/photos/rGBtpaBQ3LA"
@@ -188,12 +192,102 @@
         }
       },
       {
-        "p": {
-          "b": "Vintage rotary phone",
-          "a": {
+        "source": {
+          "link": {
+            "name": "Vintage rotary phone",
             "@href": "https://unsplash.com/photos/9blSF_Ay3MY",
             "@target": "_blank",
             "#text": "https://unsplash.com/photos/9blSF_Ay3MY"
+          }
+        }
+      },
+      {
+        "source": {
+          "link": {
+            "name": "Black Wired",
+            "@href": "https://unsplash.com/photos/66JMudIjDTw",
+            "@target": "_blank",
+            "#text": "https://unsplash.com/photos/66JMudIjDTw"
+          }
+        }
+      },
+      {
+        "source": {
+          "link": {
+            "name": "Gray Wireless",
+            "@href": "https://unsplash.com/photos/LSNJ-pltdu8",
+            "@target": "_blank",
+            "#text": "https://unsplash.com/photos/LSNJ-pltdu8"
+          }
+        }
+      },
+      {
+        "source": {
+          "link": {
+            "name": "Pink Wireless Beats",
+            "@href": "https://unsplash.com/photos/bWZAPKm0zZE",
+            "@target": "_blank",
+            "#text": "https://unsplash.com/photos/bWZAPKm0zZE"
+          }
+        }
+      },
+      {
+        "source": {
+          "link": {
+            "name": "Apple AirPods",
+            "@href": "https://unsplash.com/photos/NuOGFo4PudE",
+            "@target": "_blank",
+            "#text": "https://unsplash.com/photos/NuOGFo4PudE"
+          }
+        }
+      },
+      {
+        "source": {
+          "link": {
+            "name": "Xbox One",
+            "@href": "https://unsplash.com/photos/WMMh6BtmTMo",
+            "@target": "_blank",
+            "#text": "https://unsplash.com/photos/WMMh6BtmTMo"
+          }
+        }
+      },
+      {
+        "source": {
+          "link": {
+            "name": "PlayStation 5",
+            "@href": "https://unsplash.com/photos/NVD_32BBZFE",
+            "@target": "_blank",
+            "#text": "https://unsplash.com/photos/NVD_32BBZFE"
+          }
+        }
+      },
+      {
+        "source": {
+          "link": {
+            "name": "Nintendo Switch",
+            "@href": "https://unsplash.com/photos/PU1uYnZrAL0",
+            "@target": "_blank",
+            "#text": "https://unsplash.com/photos/PU1uYnZrAL0"
+          }
+        }
+      },
+      {
+        "source": {
+          "link": {
+            "name": "Xbox & Playstation Controllers",
+            "@href": "https://unsplash.com/photos/pX829a6ObhE",
+            "@target": "_blank",
+            "#text": "https://unsplash.com/photos/pX829a6ObhE"
+          }
+        }
+      },
+      {
+        "source": {
+          "link": {
+            "name": "Money Animation",
+            "@href": "https://iconduck.com/emojis/98015/money-with-wings",
+            "@target": "_blank",
+            "#text": "https://iconduck.com/emojis/98015/money-with-wings"
           }
         }
       }
