@@ -16,7 +16,7 @@ const money = document.getElementById("money");
 const playAnimation = document.getElementById("play");
 const animate = document.getElementById("animate");
 const { body } = document;
-const arr = [
+const array = [
   "tv1.png",
   "tv2.png",
   "tv3.png",
@@ -33,8 +33,12 @@ const arr = [
   "headphones2.png",
   "headphones3.png",
   "headphones4.png",
+  "gaming1.png",
+  "gaming2.png",
+  "gaming3.png",
+  "gaming4.png",
 ];
-const productImages = shuffleArray(arr); // Shuffles product images to produce a more random reslut
+const productImages = shuffleArray(array); // Shuffles product images to produce a more random reslut
 
 // The Document's last modification Date and Time are formatted and displayed (on home page)
 // Validating that the element exists to avoid errors on the other pages.
@@ -98,6 +102,9 @@ function randomGift() {
     }
     if (randomProduct.includes("headphones")) {
       randomLink.href = "./audio.html";
+    }
+    if (randomProduct.includes("gaming")) {
+      randomLink.href = "./gaming.html";
     }
     randomImg.addEventListener(
       "mouseover",
