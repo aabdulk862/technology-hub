@@ -467,6 +467,7 @@ legend {
 #benefit-heading {
   font-size: 1.9rem;
   padding: 20px 0px;
+  font-style: italic;
 }
 
 .benefits {
@@ -477,7 +478,7 @@ legend {
   margin-left: 50%;
   transform: translateX(-50%);
   border-collapse: collapse;
-  width: 80%;
+  width: 70%;
 }
 .benefits > h1 {
   font-size: 20px;
@@ -687,7 +688,7 @@ legend {
   }
 
   #rewards-text > h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   #animate {
@@ -707,7 +708,7 @@ legend {
   }
 
   #benefit-heading {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .benefits {
