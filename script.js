@@ -132,6 +132,7 @@ function setName() {
   nameInput.value = "";
 }
 
+// Changes the background on the homepage
 function changeBackground(number) {
   // Chech if background is already showing
   let prevBG;
@@ -158,6 +159,7 @@ function changeBackground(number) {
   }
 }
 
+// Checks to see if an element is on the screen
 function isInViewport(element) {
   const rect = element.getBoundingClientRect();
   return (
@@ -168,6 +170,38 @@ function isInViewport(element) {
     rect.right <=
       (window.innerWidth - 30 || document.documentElement.clientWidth - 30)
   );
+}
+
+// Plays the animation on the rewards page when the user clicks the "Save" button
+if (playAnimation) {
+  animate.style.display = "none";
+  playAnimation.onclick = function () {
+    animate.style.display = "block";
+    let start = Date.now();
+    let timer = setInterval(function () {
+      let timePassed = Date.now() - start;
+      money.style.left = timePassed / 3.5 + "px";
+      if (timePassed > 8000 || !isInViewport(money)) {
+        clearInterval(timer);
+        animate.style.display = "none";
+      }
+    }, 20);
+  };
+}
+
+// Shows and Hides the Disclaimer message on the homepage
+if (elToggle) {
+  elToggle.addEventListener("click", function () {
+    if (elContent.style.display === "none") {
+      // SHOWS the message
+      elContent.style.display = "block";
+      elToggle.innerHTML = "Hide -";
+    } else {
+      // HIDES the message
+      elContent.style.display = "none";
+      elToggle.innerHTML = "Show >";
+    }
+  });
 }
 
 // Generates Random Gift on Screen
@@ -185,33 +219,3 @@ window.addEventListener("load", (event) => {
     }
   }
 });
-
-if (elToggle) {
-  elToggle.addEventListener("click", function () {
-    if (elContent.style.display === "none") {
-      // SHOWS the message
-      elContent.style.display = "block";
-      elToggle.innerHTML = "Hide -";
-    } else {
-      // HIDES the message
-      elContent.style.display = "none";
-      elToggle.innerHTML = "Show >";
-    }
-  });
-}
-
-if (playAnimation) {
-  animate.style.display = "none";
-  playAnimation.onclick = function () {
-    animate.style.display = "block";
-    let start = Date.now();
-    let timer = setInterval(function () {
-      let timePassed = Date.now() - start;
-      money.style.left = timePassed / 3.5 + "px";
-      if (timePassed > 8000 || !isInViewport(money)) {
-        clearInterval(timer);
-        animate.style.display = "none";
-      }
-    }, 20);
-  };
-}
