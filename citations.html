@@ -18,17 +18,17 @@
     />
     <link rel="stylesheet" href="stlye.css" />
     <script
-      src="./SpryData.js"
+      src="./javascript/SpryData.js"
       language="javascript"
       type="text/javascript"
     ></script>
     <script
-      src="./SpryJSONDataSet.js"
+      src="./javascript/SpryJSONDataSet.js"
       language="javascript"
       type="text/javascript"
     ></script>
     <script>
-      var citations = new Spry.Data.JSONDataSet("./output.json", {
+      var citations = new Spry.Data.JSONDataSet("./javascript/output.json", {
         path: "citations.sources.source.link",
       });
     </script>
@@ -88,14 +88,16 @@
       <ul spry:repeat="citations">
         <li>
           <p>
-            <a href="{@href}" target="_blank" id="source"><b>{name}</b> ----> {@href}</a>
+            <a href="{@href}" target="_blank" id="source"
+              ><b>{name}</b> ----> {@href}</a
+            >
           </p>
         </li>
       </ul>
     </div>
 
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="./javascript/script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

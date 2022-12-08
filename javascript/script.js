@@ -15,6 +15,9 @@ const elContent = document.getElementById("elContent");
 const money = document.getElementById("money");
 const playAnimation = document.getElementById("play");
 const animate = document.getElementById("animate");
+const benefits = document.getElementById("benefit-heading");
+const homecards = document.getElementById("home-cards");
+const form = document.getElementById("form");
 const { body } = document;
 const array = [
   "tv1.png",
@@ -39,6 +42,21 @@ const array = [
   "gaming4.png",
 ];
 const productImages = shuffleArray(array); // Shuffles product images to produce a more random reslut
+
+// Shows and Hides the Disclaimer message on the homepage
+if (elToggle) {
+  elToggle.addEventListener("click", function () {
+    if (elContent.style.display === "none") {
+      // SHOWS the message
+      elContent.style.display = "block";
+      elToggle.innerHTML = "Hide -";
+    } else {
+      // HIDES the message
+      elContent.style.display = "none";
+      elToggle.innerHTML = "Show >";
+    }
+  });
+}
 
 // The Document's last modification Date and Time are formatted and displayed (on home page)
 // Validating that the element exists to avoid errors on the other pages.
@@ -189,19 +207,26 @@ if (playAnimation) {
   };
 }
 
-// Shows and Hides the Disclaimer message on the homepage
-if (elToggle) {
-  elToggle.addEventListener("click", function () {
-    if (elContent.style.display === "none") {
-      // SHOWS the message
-      elContent.style.display = "block";
-      elToggle.innerHTML = "Hide -";
-    } else {
-      // HIDES the message
-      elContent.style.display = "none";
-      elToggle.innerHTML = "Show >";
-    }
-  });
+// Uses XMLHttpRequest object to load the benefits table from benefits.xml
+function loadDoc() {
+  try {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "benefits.xml");
+    xhttp.onload = function () {
+      document.getElementById("table").innerHTML = this.response;
+    };
+    xhttp.send();
+    scrollWin();
+  } catch (error) {
+    console.log(error);
+  }
+  function scrollWin() {
+    window.scrollBy(0, 1000);
+  }
+}
+// Event Listener on h1 element to load the benefits table
+if (benefits) {
+  benefits.addEventListener("click", loadDoc);
 }
 
 // Generates Random Gift on Screen
@@ -219,3 +244,28 @@ window.addEventListener("load", (event) => {
     }
   }
 });
+
+// jQuery
+
+// Adds and removes hover class to the images on the home page, and the product pages
+$(".flex-container > div")
+  .on("mouseenter", function () {
+    $(this).addClass("grow");
+  })
+  .on("mouseleave", function () {
+    $(this).removeClass("grow");
+  });
+
+// Adds a Date Picker and Select Menu from jQuery UI to the form on the rewards page
+// Also validates the form using the jQuery Validation Plugin
+if (form) {
+  $(function () {
+    $("#date").datepicker({
+      showAnim: "slideDown",
+    });
+    $("#gender").selectmenu();
+    $("#form").validate({
+      errorElement: "div",
+    });
+  });
+}

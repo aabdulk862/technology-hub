@@ -1,0 +1,44 @@
+<table>
+    <tr>
+      <th></th>
+      <th>Bronze</th>
+      <th>Silver</th>
+      <th>Gold</th>
+    </tr>
+    <tr>
+      <td>10% Discount</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>✔</td>
+    </tr>
+    <tr>
+      <td>Birthday Gift</td>
+      <td>✔</td>
+      <td>✔</td>
+      <td>✔</td>
+    </tr>
+    <tr>
+      <td>Custom Orders</td>
+      <td></td>
+      <td>✔</td>
+      <td>✔</td>
+    </tr>
+    <tr>
+      <td>First Access</td>
+      <td></td>
+      <td>✔</td>
+      <td>✔</td>
+    </tr>
+    <tr>
+      <td>Suprise Offers</td>
+      <td></td>
+      <td></td>
+      <td>✔</td>
+    </tr>
+    <tr>
+      <td>Free Shipping</td>
+      <td></td>
+      <td></td>
+      <td>✔</td>
+    </tr>
+</table>
